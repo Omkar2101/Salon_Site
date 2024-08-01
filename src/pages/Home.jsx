@@ -18,6 +18,7 @@ import artist3 from "../assets/images/artist3.jpg";
 import artist4 from "../assets/images/artist4.jpg";
 import barber from "../assets/images/barber.avif";
 import wed from "../assets/images/wed.jpg";
+import asian from "../assets/images/asian.jpg"
 import TypingEffect from 'react-typing-effect';
 import young from "../assets/images/young.jpg"
 import close from "../assets/images/close.jpg"
@@ -258,7 +259,7 @@ const Home = () => {
           </div>
           <div className="bg-gray-200 p-4 transition-transform duration-300 hover:scale-105">
             <img
-              src="https://via.placeholder.com/150"
+              src={asian}
               alt="Item 4"
               className="w-full h-full object-cover"
             />
