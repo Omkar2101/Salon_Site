@@ -34,7 +34,7 @@ const Stylists = () => {
         </div>
       </div>
 
-      <div className="fixed bottom-6 right-6">
+      <div className="fixed bottom-2 right-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -50,11 +50,11 @@ const Stylists = () => {
           <AnimatePresence>
             {open && (
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.3 }}
-                className="mt-4 bg-white shadow-lg rounded-lg p-4"
+                className=" bg-white shadow-lg rounded-lg p-4"
               >
                 <JoinUs />
               </motion.div>

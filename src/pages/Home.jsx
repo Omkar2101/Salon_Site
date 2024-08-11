@@ -53,7 +53,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-orange-50 min-h-screen flex flex-col items-center justify-center p-10">
+      {/* <div className="bg-orange-50 min-h-screen flex flex-col items-center justify-center p-10">
         <div className="container mx-auto p-16">
           <div className="text-center mb-12  bg-orange-300/20">
             <h1 className="text-6xl md:text-7xl font-medium p-2 sanchez-regular text-pink-600 shadow-xl">
@@ -116,7 +116,72 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
+      </div> */}
+      <div className="bg-orange-50 min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-10">
+  <div className="container mx-auto p-6 sm:p-10 md:p-16">
+    <div className="text-center mb-8 sm:mb-10 md:mb-12 bg-orange-300/20">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium p-2 sanchez-regular text-pink-600 shadow-xl">
+        Luxury <span className="text-black">YOU<br /></span> Can <span className="text-pink">Afford</span>
+      </h1>
+    </div>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold sanchez-regular">
+      <TypingEffect
+        text={["Welcome to Glamour Grove Salon", "Experience the Best Beauty Treatments", "Book Your Appointment Now"]}
+        speed={100}
+        eraseSpeed={50}
+        typingDelay={500}
+        eraseDelay={1500}
+      />
+    </h1>
+    <div className="discount flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-10 p-6 sm:p-10 md:p-16">
+      <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-3xl flex flex-col md:flex-row w-full">
+        <motion.div
+          className="text-center md:text-left md:w-1/2"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-pink-600 mb-4">
+            Skin Care & Beauty Salon
+          </h1>
+          <p className="text-gray-600 mb-6 sm:mb-8 text-white">
+            Look natural and fresh with our professional skin care and beauty services.
+          </p>
+          <motion.button
+            className="bg-pink-600 text-white px-4 sm:px-6 py-2 rounded-full shadow-md hover:bg-pink-700"
+            whileHover={{ scale: 1.05, rotate: 2 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Get membership
+          </motion.button>
+        </motion.div>
+        <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+          <img className="w-full md:w-auto" src={discount} alt="Discount" />
+        </div>
       </div>
+
+      <motion.div
+        className="w-full md:w-1/2 mt-8 md:mt-0 flex items-center justify-center"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.video
+          src={vdo}
+          alt="Beauty Salon"
+          className="w-full md:w-auto h-40 sm:h-60 md:h-80 lg:h-full rounded-lg shadow-lg"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5 }}
+          loop
+          autoPlay
+          muted
+          playsInline
+        />
+      </motion.div>
+    </div>
+  </div>
+</div>
+
 
       <div className="bg-orange-200 font-edu-hand p-4 md:p-16">
         <motion.div
